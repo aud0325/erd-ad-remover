@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ERD 광고제거",
+    "version": "1.0",
+    "description": "",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": [
+      "https://www.erdcloud.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.erdcloud.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
